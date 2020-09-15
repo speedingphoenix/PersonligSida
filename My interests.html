@@ -31,11 +31,176 @@
     </header>
     <article id="movies">
       <h2>What kind of movies do I like</h2>
-      <h3>Here are my top 10 moives I like to watch</h3>
+      <h3>Here are my top 9 moives I like to watch</h3>
       <table>
         <tbody>
           <tr>
-            <td></td>
+            <td>
+              <p>Click on the movie title to know more about the movie</p>
+
+              <div class="tab">
+                <button
+                  class="tablinks"
+                  onclick="openCity(event, 'Panda')"
+                >
+                  Kung fu panda
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Spider')">
+                  Spider-Man: Into The Spider-Verse
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'WALL-E')">
+                  WALL_E
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Spirited')">
+                  Spirited Away
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Sinister')">
+                  Sinister
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Hush')">
+                  Hush
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Eli')">
+                  Eli
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'IT')">
+                  IT
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Cabin')">
+                  The Cabin in the Woods
+                </button>
+              </div>
+
+              <div id="Panda" class="tabcontent">
+                <h3>Kung fu panda</h3>
+                <p>
+                  Kung Fu Panda is a 2008 American computer-animated wuxia
+                  action comedy film produced by DreamWorks Animation and
+                  distributed by Paramount Pictures.
+                </p>
+                <p>
+                  In the Valley of Peace, a land in Ancient China inhabited by
+                  anthropomorphic animals, Po the giant panda is a fan of kung
+                  fu who idolizes the Furious Five – Tigress, Monkey, Crane,
+                  Viper, and Mantis – a quintet of kung fu masters trained by
+                  Master Shifu the red panda. However, Po is unable to pursue
+                  his dream of learning kung fu while he helps his father, Mr. 
+                  Ping the goose, in his noodle restaurant.
+                  <p>
+                    Grand Master Oogway, an old Galápagos tortoise and Shifu's mentor, 
+                    has a vision that Shifu's former protégé, the evil snow leopard Tai 
+                    Lung, will escape from prison and return to the valley to exact his 
+                    revenge for being denied the Dragon Scroll. Panicked, Shifu sends his messenger, 
+                    with a request for the prison to tighten its security. 
+                    He then holds a tournament for the Furious Five so that Oogway can identify 
+                    the Dragon Warrior, the one kung fu master worthy of receiving the Dragon 
+                    Scroll. Po arrives too late to enter the arena; desperate to see the Dragon 
+                    Warrior, Po straps himself to a set of fireworks and launches himself into 
+                    the middle of the arena in front of Oogway as he points towards the Dragon 
+                    Warrior. To the astonishment of everyone present, Oogway proclaims 
+                    Po as the chosen warrior.
+                  </p>
+                </p>
+              </div>
+
+              <div id="Spider" class="tabcontent">
+                <h3>Spider-Man: Into the Spider-Verse</h3>
+                <p>
+                  Spider-Man: Into the Spider-Verse is a 2018 
+                  American computer-animated superhero film featuring 
+                  the Marvel Comics character Miles Morales / Spider-Man
+                </p>
+                  <p>
+                    New York City teenager Miles Morales struggles to live up 
+                    to the expectations of his father, police officer Jefferson 
+                    Davis, who sees Spider-Man as a menace. Miles adjusts to 
+                    boarding school, and visits his uncle Aaron Davis, who 
+                    takes him to an abandoned subway station to paint graffiti. 
+                    Miles is bitten by a radioactive spider and gains spider-like 
+                    abilities similar to Spider-Man.
+                  </p>
+              </div>
+
+              <div id="WALL-E" class="tabcontent">
+                <h3>WALL-E</h3>
+                <p>
+                  WALL-E (stylized with an interpunct as WALL·E) 
+                  is a 2008 American computer-animated science 
+                  fiction romance film produced by Pixar Animation 
+                  Studios for Walt Disney Pictures.
+                </p>
+                <p>
+                  In the 29th century, rampant consumerism and environmental 
+                  neglect have turned Earth into a garbage-strewn wasteland; 
+                  humanity has been evacuated by the megacorporation Buy-N-Large 
+                  (BnL) on giant starliners seven centuries earlier. Of all the 
+                  robotic trash compactors left by BnL to clean up, only one 
+                  remains operational: a Waste Allocation Load-Lifter: Earth 
+                  Class named WALL-E. One day, WALL-E's routine of compressing 
+                  trash and collecting interesting objects is broken by the 
+                  arrival of an unmanned probe carrying an Extraterrestrial 
+                  Vegetation Evaluator named EVE, sent to scan the planet 
+                  for human-sustainable life. WALL-E is smitten by the sleek, 
+                  otherworldly robot; and the two begin to connect until EVE 
+                  goes into standby when WALL-E shows her his most recent find: 
+                  a living seedling. The probe then collects EVE and the plant, 
+                  and—with WALL-E clinging on—returns to its mothership, the 
+                  starliner Axiom.
+                </p>
+              </div>
+
+              <div id="Spirited" class="tabcontent">
+                <h3>Spirited Away</h3>
+                <p></p>
+              </div>
+
+              <div id="Sinister" class="tabcontent">
+                <h3>Sinister</h3>
+                <p></p>
+              </div>
+
+              <div id="Hush" class="tabcontent">
+                <h3>Hush</h3>
+                <p></p>
+              </div>
+
+              <div id="Eli" class="tabcontent">
+                <h3>Eli</h3>
+                <p></p>
+              </div>
+
+              <div id="IT" class="tabcontent">
+                <h3>IT</h3>
+                <p></p>
+              </div>
+
+              <div id="Cabin" class="tabcontent">
+                <h3>The Cabin in the Woods</h3>
+                <p></p>
+              </div>
+
+              <script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+              </script>
+            </td>
           </tr>
         </tbody>
       </table>
