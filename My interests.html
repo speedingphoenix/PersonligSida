@@ -46,38 +46,41 @@
               <div class="tab">
                 <button
                   class="tablinks"
-                  onclick="openCity(event, 'Panda')"
+                  onclick="movie(event, 'Panda')"
                 >
                   Kung fu panda
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Spider')">
+                <button class="tablinks" onclick="movie(event, 'Spider')">
                   Spider-Man: Into The Spider-Verse
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'WALL-E')">
-                  WALL_E
+                <button class="tablinks" onclick="movie(event, 'WALL-E')">
+                  WALL-E
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Spirited')">
+                <button class="tablinks" onclick="movie(event, 'Spirited')">
                   Spirited Away
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Sinister')">
+                <button class="tablinks" onclick="movie(event, 'Sinister')">
                   Sinister
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Hush')">
+                <button class="tablinks" onclick="movie(event, 'Hush')">
                   Hush
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Eli')">
+                <button class="tablinks" onclick="movie(event, 'Eli')">
                   Eli
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'IT')">
+                <button class="tablinks" onclick="movie(event, 'IT')">
                   IT
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Cabin')">
+                <button class="tablinks" onclick="movie(event, 'Cabin')">
                   The Cabin in the Woods
                 </button>
               </div>
 
+              
+
               <div id="Panda" class="tabcontent">
                 <h3>Kung fu panda</h3>
+                <img src="panda.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   Kung Fu Panda is a 2008 American computer-animated wuxia
                   action comedy film produced by DreamWorks Animation and
@@ -110,6 +113,7 @@
 
               <div id="Spider" class="tabcontent">
                 <h3>Spider-Man: Into the Spider-Verse</h3>
+                <img src="spider man.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   Spider-Man: Into the Spider-Verse is a 2018 
                   American computer-animated superhero film featuring 
@@ -128,6 +132,7 @@
 
               <div id="WALL-E" class="tabcontent">
                 <h3>WALL-E</h3>
+                <img src="wall-e.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   WALL-E (stylized with an interpunct as WALL·E) 
                   is a 2008 American computer-animated science 
@@ -156,6 +161,7 @@
 
               <div id="Spirited" class="tabcontent">
                 <h3>Spirited Away</h3>
+                <img src="away.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   Spirited away is a 2001 Japanese-animated fantasy 
                   film written and directed by Hayao Miyazaki, 
@@ -179,6 +185,7 @@
 
               <div id="Sinister" class="tabcontent">
                 <h3>Sinister</h3>
+                <img src="sinister.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   Sinister is a 2012 supernatural horror film directed and 
                   co-written by Scott Derrickson. The film stars Ethan Hawke, 
@@ -203,6 +210,7 @@
 
               <div id="Hush" class="tabcontent">
                 <h3>Hush</h3>
+                <img src="hush.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   Hush is a 2016 American slasher film directed and edited by Mike Flanagan, 
                   starring Kate Siegel, who also co-wrote the film with Flanagan. The film 
@@ -228,6 +236,7 @@
 
               <div id="Eli" class="tabcontent">
                 <h3>Eli</h3>
+                <img src="eli.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   Eli is a 2019 American horror film, directed by Ciarán Foy from a screenplay 
                   by David Chirchirillo, Ian Goldberg, and Richard Naing. It stars Kelly Reilly, 
@@ -248,6 +257,7 @@
 
               <div id="IT" class="tabcontent">
                 <h3>IT</h3>
+                <img src="it.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   It, retroactively known as It Chapter One, is a 2017 supernatural 
                   horror film based on Stephen King's 1986 novel of the same name. 
@@ -277,6 +287,7 @@
 
               <div id="Cabin" class="tabcontent">
                 <h3>The Cabin in the Woods</h3>
+                <img src="cabin.jpg" alt="Picture of the cover for the movie" width="300" height="300">
                 <p>
                   The Cabin in the Woods is a 2011 American horror comedy 
                   film directed by Drew Goddard in his directorial debut, 
@@ -304,7 +315,7 @@
               </div>
 
               <script>
-                function openCity(evt, cityName) {
+                function movie(evt, movieName) {
                   var i, tabcontent, tablinks;
                   tabcontent = document.getElementsByClassName("tabcontent");
                   for (i = 0; i < tabcontent.length; i++) {
@@ -317,7 +328,7 @@
                       ""
                     );
                   }
-                  document.getElementById(cityName).style.display = "block";
+                  document.getElementById(movieName).style.display = "block";
                   evt.currentTarget.className += " active";
                 }
 
@@ -329,19 +340,187 @@
         </tbody>
       </table>
     </article>
-    <article id="Like/Dislike">
-      <h2>What I like/dislike</h2>
-      <h3>This a list of what I like and dislike</h3>
+    <article id="Music">
+      <h2>What I kind of music I listen to</h2>
+      <h3>This a list of what kinf of music and bands I listnd to</h3>
       <table>
         <tbody>
           <tr>
-            <td></td>
+            <td>
+              <div class="tab">
+                <button
+                  class="tablinks"
+                  onclick="music(event, '')"
+                >
+                  
+                </button>
+                <button class="tablinks" onclick="music(event, 'Nate')">
+                  NateWantsToBattle
+                </button>
+                <button class="tablinks" onclick="music(event, 'Ninja')">
+                  Tryhardninja
+                </button>
+                <button class="tablinks" onclick="music(event, 'Offspring')">
+                  The Offspring
+                </button>
+                <button class="tablinks" onclick="music(event, 'Woodkid')">
+                  Woodkid
+                </button>
+                <button class="tablinks" onclick="music(event, 'Kesha')">
+                  ke$ha
+                </button>
+                <button class="tablinks" onclick="music(event, 'Skillet')">
+                  Skillet
+                </button>
+                <button class="tablinks" onclick="music(event, 'Fall')">
+                  Fall Out Boy
+                </button>
+                <button class="tablinks" onclick="music(event, 'Pew')">
+                  Pewdiepie
+                </button>
+              </div>
+              <div id="Nate" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+
+              <div id="Ninja" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+
+              <div id="Offspring" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+
+              <div id="woodkid" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+
+              <div id="kesha" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+
+              <div id="Skillet" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+
+              <div id="Fall" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+              <div id="Pew" class="tabcontent">
+                <h3></h3>
+                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
+                <p>
+                  
+                </p>
+                <p>
+                  
+                  <p>
+              </div>
+              <script>
+                function music(evt, artistName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  document.getElementById(artistName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+              </script>
+            </td>
           </tr>
         </tbody>
       </table>
     </article>
     <footer>
-      <p></p>
+      <p>Here is the websites I got information about the movies and bands/artists</p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Kung_Fu_Panda"> More about Kung fu panda</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse">More about Spider-Man: Into the Spider-Verse</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/WALL-E">More about WALL-E</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Spirited_Away">More about Spirited Away</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Sinister_(film)">More about Sinister</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Hush_(2016_film)">More about Hush</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/It_(2017_film)">More about IT</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Eli_(2019_film)">More about Eli</a>
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/The_Cabin_in_the_Woods">More about Cabin in the Woods</a>
+      </p>
+
     </footer>
   </body>
 </html>
