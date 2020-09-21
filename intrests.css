@@ -14,8 +14,8 @@ article {
   footer {
     font-family: "Times New Roman", Times, serif;
     padding: 8px;
-    background-color: black;
-    color: white;
+    background-color: darkgray;
+    color: black;
     text-align: center;
   }
   p {
