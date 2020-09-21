@@ -29,6 +29,7 @@
         </script>
       </nav>
     </header>
+    <h1>This is a couple of lists about things that I like</h1>
     <article id="movies">
       <h2>What kind of movies do I like</h2>
       <h3>Here are my top 9 moives I like to watch</h3>
@@ -342,164 +343,98 @@
     </article>
     <article id="Music">
       <h2>What I kind of music I listen to</h2>
-      <h3>This a list of what kinf of music and bands I listnd to</h3>
       <table>
         <tbody>
           <tr>
-            <td>
-              <div class="tab">
-                <button
-                  class="tablinks"
-                  onclick="music(event, 'Swedish')"
-                >
-                  Swedish House Mafia
-                </button>
-                <button class="tablinks" onclick="music(event, 'Nate')">
-                  NateWantsToBattle
-                </button>
-                <button class="tablinks" onclick="music(event, 'Ninja')">
-                  Tryhardninja
-                </button>
-                <button class="tablinks" onclick="music(event, 'Offspring')">
-                  The Offspring
-                </button>
-                <button class="tablinks" onclick="music(event, 'Woodkid')">
-                  Woodkid
-                </button>
-                <button class="tablinks" onclick="music(event, 'Kesha')">
-                  ke$ha
-                </button>
-                <button class="tablinks" onclick="music(event, 'Skillet')">
-                  Skillet
-                </button>
-                <button class="tablinks" onclick="music(event, 'Fall')">
-                  Fall Out Boy
-                </button>
-                <button class="tablinks" onclick="music(event, 'Pew')">
-                  Pewdiepie
-                </button>
-              </div>
-
-              <div id="Swedish" class="tabcontent">
-                <h3>Swedish House Mafia</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Nate" class="tabcontent">
-                <h3>NateWantsToBattle</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Ninja" class="tabcontent">
-                <h3>Tryhardninja</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Offspring" class="tabcontent">
-                <h3>The Offspring</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Woodkid" class="tabcontent">
-                <h3>Woodkid</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Kesha" class="tabcontent">
-                <h3>Ke$ha</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Skillet" class="tabcontent">
-                <h3>Skillet</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-
-              <div id="Fall" class="tabcontent">
-                <h3>Fall Out Boy</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-              <div id="Pew" class="tabcontent">
-                <h3>Pewdiepie</h3>
-                <img src="" alt="Picture of the cover for the artist" width="300" height="300">
-                <p>
-                  
-                </p>
-                <p>
-                  
-                  <p>
-              </div>
-              <script>
-                function music(evt, artistName) {
-                  var i, tabcontent, tablinks;
-                  tabcontent = document.getElementsByClassName("tabcontent");
-                  for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                  }
-                  tablinks = document.getElementsByClassName("tablinks");
-                  for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(
-                      " active",
-                      ""
-                    );
-                  }
-                  document.getElementById(artistName).style.display = "block";
-                  evt.currentTarget.className += " active";
-                }
-
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-              </script>
-            </td>
+            <th>Songs</th>
+            <th>Artist</th>
+            <th>Genres</th>
           </tr>
+            <tr>
+    <td>Hero of Our Time</td>
+    <td>NateWantsToBattle</td>
+    <td>Indie/Alternative</td>
+  </tr>
+  <tr>
+    <td>Dragonhearted</td>
+    <td>Tryhardninja</td>
+    <td>Dance/Electro</td>
+  </tr>
+  <tr>
+    <td>Addict (From Hazbin Hotel)</td>
+    <td>NateWantsToBattle</td>
+    <td>Rock Cover</td>
+  </tr>
+  <tr>
+    <td>Lock Me Up (Quarantine Song)</td>
+    <td>The Chalkeaters</td>
+    <td>Pop</td>
+  </tr>
+  <tr>
+    <td>You're Gonna Go Far, Kid</td>
+    <td>The Offspring</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>Addict</td>
+    <td>Silva Hound</td>
+    <td>Dance, Pop</td>
+  </tr>
+  <tr>
+    <td>No Friends</td>
+    <td>Cadmium, Rosendale</td>
+    <td>Pop</td>
+  </tr>
+  <tr>
+    <td>Run Boy Run</td>
+    <td>Woodkid</td>
+    <td>Indie/Alternative</td>
+  </tr>
+  <tr>
+    <td>Astronomia (Coffin Dance)</td>
+    <td>Vicetone, Tony Igy</td>
+    <td>Dance/Electro</td>
+  </tr>
+  <tr>
+    <td>Help! Oh Well...</td>
+    <td>SomeThingElseyt</td>
+    <td>Rap</td>
+  </tr>
+  <tr>
+    <td>Russian Roulette</td>
+    <td>Tungevaag, Raaban, Charlie Who?</td>
+    <td>Dance/Electro</td>
+  </tr>
+  <tr>
+    <td>My Songs Know What You Did In The Dark</td>
+    <td>Fall Out Boy</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>Stand Out Fit In</td>
+    <td>ONE OK ROCK</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>The Resistance</td>
+    <td>Skillet</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>Doubt</td>
+    <td>Twenty One Pilots</td>
+    <td>Indie/Alternative</td>
+  </tr>
+  <tr>
+    <td>B**ch Lasagna</td>
+    <td>Party In Backyard, Pewdiepie</td>
+    <td>Disstrack</td>
+  </tr>
+  <tr>
+    <td>When Can I See You Again?</td>
+    <td>Owl City</td>
+    <td>Pop</td>
+  </tr>
         </tbody>
       </table>
     </article>
@@ -515,10 +450,6 @@
         <a href="https://en.wikipedia.org/wiki/Eli_(2019_film)">More about Eli, </a>
         <a href="https://en.wikipedia.org/wiki/The_Cabin_in_the_Woods">More about Cabin in the Woods</a>
       </p>
-      
-      <p>Here are more about bands/artists</p>
-      <a href=""></a>
-
     </footer>
   </body>
 </html>
