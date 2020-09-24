@@ -31,10 +31,6 @@
     </header>
     <article id="Hobbies">
       <h2>What are my hoppies?</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>
               <p> Well, I have 2 main hobbies. Which is:
               <p>Gaming and drawing
                 </p>
@@ -149,31 +145,17 @@
                       dots[slideIndex-1].className += " active";
                     }
                     </script>
-                </td>
-              </tr>
-            </td>
-          </tr>
-          <tr>
-            <td>
-            </td>
-          </tr>
-        </tbody>
-      </table>
     </article>
     <article id="game">
       <h2>Games that I play/my favorite games to play</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <p>Click on the game titles to know a little more about the games</p>
+          <p>Click on the game titles to know a little more about the games</p>
 
               <div class="tab">
-                 <button class="tablinks" onclick="openCity(event, 'Fire')">Fire Emblem: Three Houses</button>
-                 <button class="tablinks" onclick="openCity(event, 'Sid')">Sid Meier's Civilization V</button>
-                 <button class="tablinks" onclick="openCity(event, 'Star')">Star Wars: Knights Of The Old Republic</button>
-                 <button class="tablinks" onclick="openCity(event, 'Queen')">Long Live The Queen</button>
-                 <button class="tablinks" onclick="openCity(event, 'Pokemon')">Pokemon: Omaga Ruby</button>
+                 <button class="tablinks" onclick="openGame(event, 'Fire')">Fire Emblem: Three Houses</button>
+                 <button class="tablinks" onclick="openGame(event, 'Sid')">Sid Meier's Civilization V</button>
+                 <button class="tablinks" onclick="openGame(event, 'Star')">Star Wars: Knights Of The Old Republic</button>
+                 <button class="tablinks" onclick="openGame(event, 'Queen')">Long Live The Queen</button>
+                 <button class="tablinks" onclick="openGame(event, 'Pokemon')">Pokemon: Omaga Ruby</button>
                   </div>
 
                   <div id="Fire" class="tabcontent">
@@ -319,7 +301,7 @@
                   </div>
 
                   <script>
-                    function openCity(evt, cityName) {
+                    function openGame(evt, cityName) {
                       var i, tabcontent, tablinks;
                    tabcontent = document.getElementsByClassName("tabcontent");
                   for (i = 0; i < tabcontent.length; i++) {
@@ -337,24 +319,12 @@
       <p>The information about the games are not my own 
         words and here are the website that I got 
         the information from</p>
-        <p>
           <a href="https://fireemblem.fandom.com/wiki/Fire_Emblem:_Three_Houses">About Fire Emblem: Three Houses</a>
-        </p>
-        <p>
           <a href="https://civilization.fandom.com/wiki/Civilization_V"> About Sid Meier's Civilization V</a>
-        </p>
-        <p>
           <a href="https://starwars.fandom.com/wiki/Star_Wars:_Knights_of_the_Old_Republic"> About Star Wars: Knights Of The Old Republic</a>
-        </p>
-        <p>
-        <a href="https://en.wikipedia.org/wiki/Long_Live_the_Queen_(video_game)">About Long Live The Queen</a>
-        </p>
-        <p>
+          <a href="https://en.wikipedia.org/wiki/Long_Live_the_Queen_(video_game)">About Long Live The Queen</a>
           <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Omega_Ruby_and_Alpha_Sapphire"> About Pokemon: Omega Ruby</a>
-        </p>
-        <p>
-          <a href="https://youtu.be/dQw4w9WgXcQ">Click here to know something spectacular</a>
-        </p>
+          <p><a href="https://youtu.be/dQw4w9WgXcQ">Click here to know something spectacular</a> </p>
     </footer>
   </body>
 </html>
