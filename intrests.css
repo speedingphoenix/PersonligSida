@@ -72,6 +72,10 @@ article {
       display: block;
       text-align: left;
     }
+    .topnav{
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   
 /* Style the tab */
