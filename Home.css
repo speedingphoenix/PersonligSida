@@ -83,17 +83,14 @@
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+ @media (max-width: 20px) {
     .topnav a:not(:first-child) {
       display: none;
     }
-    .topnav a.icon {
+   .topnav a.icon {
       float: right;
       display: block;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
     .topnav.responsive {
       position: relative;
     }
@@ -108,6 +105,19 @@
       text-align: left;
     }
   }
+
+  
+ /* nav a{
+    display: inline;
+  }
+  nav{
+    display: flex;
+    background-color: darkgray;
+    width: 100%;
+    text-align: center;
+    top: 0;
+  }
+  */
  #Profil{
   display: flex;
   justify-content: center;
