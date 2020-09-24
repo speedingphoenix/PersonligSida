@@ -105,19 +105,6 @@
       text-align: left;
     }
   }
-
-  
- /* nav a{
-    display: inline;
-  }
-  nav{
-    display: flex;
-    background-color: darkgray;
-    width: 100%;
-    text-align: center;
-    top: 0;
-  }
-  */
  #Profil{
   display: flex;
   justify-content: center;
